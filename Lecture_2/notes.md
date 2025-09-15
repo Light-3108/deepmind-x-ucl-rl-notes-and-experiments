@@ -8,7 +8,7 @@ q(a) is the true value
 
 According to Hoeffding's Inequality
 
-![alt text](image-8.png)
+![alt text](image-9.png)
 
 let, here the max probability that Q + U <= q is p.
 and probability that Q + U > q is (1 - p)
