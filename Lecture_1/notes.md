@@ -196,3 +196,11 @@ if Nt(a) is large, Ut(a) will be small, action will be selected if it's value es
 
 ## Deriving an optimal bound
 
+we want to act in the face of uncertainity. 
+we always want Q(a) + U(a) >= q(a) (we are being optimistic)
+
+According to Hoeffding's Inequality
+
+![alt text](image-8.png)
+
+
