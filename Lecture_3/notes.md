@@ -124,6 +124,60 @@ down arrow is greedyfication
 
 We can repeat evaluation and greedyfication improving each time to reach optimal policy. 
 
+---
+
+Does it require to iterate up to true v^pie for each evaluation steps?
+
+This is very computationaly heavy as, it requires many iterations at each evaluation
+
+Turns out we can the just evaulate for 1 iteration and we still can get optimal value function
+
+it's call value iteration
+
+![alt text](image-13.png)
+
+For simple deterministics world
+
+it's simply V_k+1(s) =  R_t+1  +  max(over a) (gamma * V_k(St+1))
+
+Here we are doing evaluaton and greedification at the same time, i.e at one step
+
+
+## Synchronous value iteration 
+
+Yesma V_new ra V_old dubai save garnu parxa
+
+![alt text](image-15.png)
+
+## In-place value iteration
+
+Yesma just one copy matra rakhe hunxa, maile code ma gareko jastai, already updated value ni use garna payo. 
+
+converge hune raixa asari ni. 
+
+![alt text](image-14.png)
+
+
+## Prioteorized sweeping
+
+Jun state ma Bellman's error badi xa tei select garne, ani update garne
+
+![alt text](image-16.png)
+
+Hamro Standard DP le full width backup use garxa, 
+
+tara if state-space ekdam thulo xa vane it is not possible
+
+even for one full backup (i.e looking all the actions and states). 
+
+so use Sample backup
+
+![alt text](image-17.png)
+
+It's model free, i.e no advance knowledge of MDP is required. 
+
+
+
 
 
 
