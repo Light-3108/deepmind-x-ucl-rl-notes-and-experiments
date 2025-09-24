@@ -334,7 +334,7 @@ if lamda = 0, we get TD and if lamda = 1, we get MC
 
 1. alpha should be decreased if we increase lamda
 2. we can see lamda is slightly better than n here
-3. n = 4 seems similar to lamda = .8 | and they also need same lamda
+3. n = 4 seems similar to lamda = .8 | and they also need same alpha
 
 Relation between lamda and alpha
 
@@ -351,6 +351,26 @@ if lamda = 0.9, we get n = 10 | seems similar in the graph i.e lamda = 0.9 and n
 
 ## Eligibility Traces
 
+(not fully understood)
+
+muliti-step returns are not independent of span so it is still computationally heavy
+How to make it independent?
+
+1. First write MC error as sum of td errors
+
+![alt text](image-33.png)
+
+Now we do update in MC as
+
+![alt text](image-34.png)
+
+Accumulating a whole episode of the updates:
+
+![alt text](image-35.png)
+
+e_t = eligibility trace
+
+![alt text](image-36.png)
 
 
 
